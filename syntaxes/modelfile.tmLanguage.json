@@ -1,0 +1,29 @@
+{
+  "scopeName": "source.modelfile",
+  "patterns": [
+    {
+      "match": "(?i)\\b(FROM|ADAPTER|TEMPLATE|SYSTEM|LICENSE|PARAMETER)\\b",
+      "name": "keyword.modelfile"
+    },
+    {
+      "begin": "^\\s*#",
+      "end": "$",
+      "name": "comment.line.number-sign.modelfile"
+    },
+    {
+      "begin": "\"\"\"",
+      "end": "\"\"\"",
+      "name": "string.quoted.triple.modelfile",
+      "patterns": [
+        {
+          "match": "[^\"\\\\]+(?:(?:\\\\.)[^\"\\\\]*)*",
+          "name": "string.quoted.triple.content.modelfile"
+        }
+      ]
+    },
+    {
+      "match": "\"(.*?)\"",
+      "name": "string.quoted.double.modelfile"
+    }
+  ]
+}

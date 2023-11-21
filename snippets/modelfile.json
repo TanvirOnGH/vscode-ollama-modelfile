@@ -1,0 +1,32 @@
+{
+  "From Statement": {
+    "prefix": "from",
+    "body": ["FROM $1"],
+    "description": "FROM statement in modelfile"
+  },
+  "Adapter Statement": {
+    "prefix": "adapter",
+    "body": ["ADAPTER $1"],
+    "description": "ADAPTER statement in modelfile"
+  },
+  "Template Block": {
+    "prefix": "template",
+    "body": ["TEMPLATE \"\"\"$1\"\"\""],
+    "description": "Multiline template block in modelfile"
+  },
+  "System Block": {
+    "prefix": "system",
+    "body": ["SYSTEM \"\"\"$1\"\"\""],
+    "description": "Multiline system block in modelfile"
+  },
+  "License Block": {
+    "prefix": "license",
+    "body": ["LICENSE \"\"\"$1\"\"\""],
+    "description": "Multiline license block in modelfile"
+  },
+  "Parameter": {
+    "prefix": "param",
+    "body": ["PARAMETER $1 $2"],
+    "description": "Parameter in modelfile"
+  }
+}

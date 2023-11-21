@@ -1,0 +1,57 @@
+{
+  "name": "ollama-modelfile",
+  "displayName": "Ollama Modelfile",
+  "version": "1.0.0",
+  "description": "Syntax highlighting for Ollama Modelfiles",
+  "categories": [
+    "Programming Languages"
+  ],
+  "publisher": "Tanvir",
+  "author": {
+    "name": "Tanvir"
+  },
+  "pricing": "Free",
+  "license": "See the license in LICENSE file",
+  "bugs": {
+    "url": "https://github.com/TanvirOnGH/vscode-ollama-modelfile/issues",
+    "email": "tanvir.ahmed.tonoy@skiff.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TanvirOnGH/vscode-ollama-modelfile.git"
+  },
+  "homepage": "https://github.com/TanvirOnGH/vscode-ollama-modelfile/blob/main/README.md",
+  "engines": {
+    "vscode": "^1.72.0"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "modelfile",
+        "aliases": [
+          "Modelfile",
+          "modelfile"
+        ],
+        "extensions": [
+          ".modelfile"
+        ],
+        "filenamePatterns": [
+          "Modelfile"
+        ]
+      }
+    ],
+    "grammars": [
+      {
+        "language": "modelfile",
+        "scopeName": "source.modelfile",
+        "path": "./syntaxes/modelfile.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "modelfile",
+        "path": "./snippets/modelfile.json"
+      }
+    ]
+  }
+}
