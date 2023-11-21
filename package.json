@@ -1,7 +1,7 @@
 {
   "name": "ollama-modelfile",
   "displayName": "Ollama Modelfile",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Syntax highlighting for Ollama Modelfiles",
   "categories": [
     "Programming Languages"
@@ -11,7 +11,7 @@
     "name": "Tanvir"
   },
   "pricing": "Free",
-  "license": "See the license in LICENSE file",
+  "license": "SEE LICENSE IN LICENSE",
   "bugs": {
     "url": "https://github.com/TanvirOnGH/vscode-ollama-modelfile/issues",
     "email": "tanvir.ahmed.tonoy@skiff.com"
@@ -24,6 +24,7 @@
   "engines": {
     "vscode": "^1.72.0"
   },
+  "icon": "images/icon.png",
   "contributes": {
     "languages": [
       {
