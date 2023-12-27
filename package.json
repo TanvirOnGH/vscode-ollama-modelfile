@@ -38,7 +38,8 @@
         ],
         "filenamePatterns": [
           "Modelfile"
-        ]
+        ],
+        "configuration": "./syntaxes/modelfile.language-configuration.json"
       }
     ],
     "grammars": [
