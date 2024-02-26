@@ -2,7 +2,7 @@
   "scopeName": "source.modelfile",
   "patterns": [
     {
-      "match": "(?i)\\b(FROM|ADAPTER|TEMPLATE|SYSTEM|LICENSE|PARAMETER)\\b",
+      "match": "(?i)\\b(FROM|ADAPTER|TEMPLATE|SYSTEM|LICENSE|PARAMETER|MESSAGE)\\b",
       "name": "keyword.modelfile"
     },
     {
