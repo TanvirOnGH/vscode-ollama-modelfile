@@ -2,36 +2,36 @@
   "From Statement": {
     "prefix": "from",
     "body": ["FROM $1"],
-    "description": "FROM statement in modelfile"
+    "description": "Defines the base model to use."
   },
   "Adapter Statement": {
     "prefix": "adapter",
     "body": ["ADAPTER $1"],
-    "description": "ADAPTER statement in modelfile"
+    "description": "Defines the (Q)LoRA adapters to apply to the model."
   },
   "Template Block": {
     "prefix": "template",
     "body": ["TEMPLATE \"\"\"$1\"\"\""],
-    "description": "Multiline template block in modelfile"
+    "description": "The full prompt template to be sent to the model."
   },
   "System Block": {
     "prefix": "system",
     "body": ["SYSTEM \"\"\"$1\"\"\""],
-    "description": "Multiline system block in modelfile"
+    "description": "Specifies the system message that will be set in the template."
   },
   "License Block": {
     "prefix": "license",
     "body": ["LICENSE \"\"\"$1\"\"\""],
-    "description": "Multiline license block in modelfile"
+    "description": "Specifies the legal license."
   },
   "Parameter": {
     "prefix": "param",
     "body": ["PARAMETER $1 $2"],
-    "description": "Parameter in modelfile"
+    "description": "Sets the parameters for how Ollama will run the model."
   },
   "Message": {
     "prefix": "message",
     "body": ["MESSAGE $1 $2"],
-    "description": "Message in modelfile"
+    "description": "Specify message history."
   }
 }
