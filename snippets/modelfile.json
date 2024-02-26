@@ -28,5 +28,10 @@
     "prefix": "param",
     "body": ["PARAMETER $1 $2"],
     "description": "Parameter in modelfile"
+  },
+  "Message": {
+    "prefix": "message",
+    "body": ["MESSAGE $1 $2"],
+    "description": "Message in modelfile"
   }
 }
