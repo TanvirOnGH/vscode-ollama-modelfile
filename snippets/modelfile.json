@@ -33,5 +33,73 @@
     "prefix": "message",
     "body": ["MESSAGE $1 $2"],
     "description": "Specify message history."
+  },
+  "Template ChatML": {
+    "description": "Specify ChatML Template",
+    "prefix": [
+      "template chatml"
+    ],
+    "body": [
+      "TEMPLATE \"\"\" {{ if .System }}<|im_start|>system",
+      "{{ .System }}<|im_end|>",
+      "{{ end }}",
+      "{{ if .Prompt }}<|im_start|>user",
+      "{{ .Prompt }}<|im_end|>",
+      "{{ end }}",
+      "<|im_start|>assistant",
+      "\"\"\"",
+      "",
+      "# Common ChatML Stop Tokens, Set these as per your models requirements",
+      "PARAMETER stop \"<|system|>\"",
+      "PARAMETER stop \"<|user|>\"",
+      "PARAMETER stop \"<|assistant|>\"",
+      "PARAMETER stop \"</s>\"",
+      "PARAMETER stop \"<|endoftext|>\"",
+      "PARAMETER stop \"<|im_start|>\"",
+      "PARAMETER stop \"<|im_end|>\"",
+      "PARAMETER stop \"<|im_done|>\"",
+      "PARAMETER stop \"<|eot_id|>\""
+    ]
+  },
+  "Template Llama3": {
+    "description": "Specify Llama3 Template",
+    "prefix": [
+      "template llama3"
+    ],
+    "body": [
+      "TEMPLATE \"\"\"{{ if .System }}<|start_header_id|>system<|end_header_id|>",
+      "",
+      "{{ .System }}<|eot_id|>{{ end }}{{ if .Prompt }}<|start_header_id|>user<|end_header_id|>",
+      "",
+      "{{ .Prompt }}<|eot_id|>{{ end }}<|start_header_id|>assistant<|end_header_id|>",
+      "",
+      "{{ .Response }}<|eot_id|>",
+      "\"\"\"",
+      "",
+      "PARAMETER stop \"<|start_header_id|>\"",
+      "PARAMETER stop \"<|end_header_id|>\"",
+      "PARAMETER stop \"<|eot_id|>\""
+    ]
+  },
+  "Template Phi3": {
+    "description": "Specify Phi3 Template",
+    "prefix": [
+      "template phi3"
+    ],
+    "body": [
+      "TEMPLATE \"\"\"{{ if .System }}<|system|>",
+      "{{ .System }}<|end|>",
+      "{{ end }}{{ if .Prompt }}<|user|>",
+      "{{ .Prompt }}<|end|>",
+      "{{ end }}<|assistant|>",
+      "{{ .Response }}<|end|>",
+      "\"\"\"",
+      "",
+      "PARAMETER stop \"<|user|>\"",
+      "PARAMETER stop \"<|assistant|>\"",
+      "PARAMETER stop \"<|system|>\"",
+      "PARAMETER stop \"<|end|>\"",
+      "PARAMETER stop \"<|endoftext|>\""
+    ]
   }
 }
