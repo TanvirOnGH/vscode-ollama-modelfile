@@ -3,11 +3,11 @@
 Experimental syntax highlighting VSCode extension for [Ollama](https://github.com/jmorganca/ollama) [Modelfile](https://github.com/jmorganca/ollama/blob/main/docs/modelfile.md).
 
 > [!NOTE]  
-> 1. Ollama's Modelfile syntax is in development.
+> Ollama's Modelfile syntax is in development.
 >
-> 2. Instructions can be in any order.
+> Instructions can be in any order.
 >
-> 3. The `Modelfile` is not case sensitive.
+> The `Modelfile` is not case sensitive.
 
 ## What is Ollama Modelfile?
 
