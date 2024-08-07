@@ -171,5 +171,15 @@
       "PARAMETER stop \"<start_of_turn>\"",
       "PARAMETER stop \"<end_of_turn>\""
     ]
+  },
+  "Template Mistral 0.1": {
+    "description": "Specify Mistral 0.1 Template",
+    "prefix": ["template mistral-0.1"],
+    "body": [
+      "[INST] {{ .System }} {{ .Prompt }} [/INST]",
+      "",
+      "PARAMETER stop \"[INST]\"",
+      "PARAMETER stop \"[/INST]\""
+    ]
   }
 }
