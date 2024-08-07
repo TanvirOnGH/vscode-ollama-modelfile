@@ -59,6 +59,20 @@
       "PARAMETER stop \"<|eot_id|>\""
     ]
   },
+  "Template Llama2": {
+    "description": "Specify Llama2 Template",
+    "prefix": ["template llama2"],
+    "body": [
+      "[INST] <<SYS>>{{ .System }}<</SYS>>",
+      "",
+      "{{ .Prompt }} [/INST]",
+      "",
+      "PARAMETER stop \"[INST]\"",
+      "PARAMETER stop \"[/INST]\"",
+      "PARAMETER stop \"<<SYS>>\"",
+      "PARAMETER stop \"<</SYS>>\""
+    ]
+  },
   "Template Llama3": {
     "description": "Specify Llama3 Template",
     "prefix": ["template llama3"],
