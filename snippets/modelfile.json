@@ -146,5 +146,15 @@
       "PARAMETER stop \"[INST]\"",
       "PARAMETER stop \"[/INST]\""
     ]
+  },
+  "Template Mixtral": {
+    "description": "Specify Mixtral Template",
+    "prefix": ["template mixtral"],
+    "body": [
+      "[INST] {{ if .System }}{{ .System }} {{ end }}{{ .Prompt }} [/INST]",
+      "",
+      "PARAMETER stop \"[INST]\"",
+      "PARAMETER stop \"[/INST]\""
+    ]
   }
 }
