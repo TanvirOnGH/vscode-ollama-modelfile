@@ -91,6 +91,19 @@
       "PARAMETER stop \"<|eot_id|>\""
     ]
   },
+  "Template Phi2": {
+    "description": "Specify Phi2 Template",
+    "prefix": ["template phi2"],
+    "body": [
+      "{{ if .System }}System: {{ .System }}{{ end }}",
+      "User: {{ .Prompt }}",
+      "Assistant:",
+      "",
+      "PARAMETER stop \"User:\"",
+      "PARAMETER stop \"Assistant:\"",
+      "PARAMETER stop \"System:\""
+    ]
+  },
   "Template Phi3": {
     "description": "Specify Phi3 Template",
     "prefix": ["template phi3"],
