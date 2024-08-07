@@ -36,9 +36,7 @@
   },
   "Template ChatML": {
     "description": "Specify ChatML Template",
-    "prefix": [
-      "template chatml"
-    ],
+    "prefix": ["template chatml"],
     "body": [
       "TEMPLATE \"\"\" {{ if .System }}<|im_start|>system",
       "{{ .System }}<|im_end|>",
@@ -63,9 +61,7 @@
   },
   "Template Llama3": {
     "description": "Specify Llama3 Template",
-    "prefix": [
-      "template llama3"
-    ],
+    "prefix": ["template llama3"],
     "body": [
       "TEMPLATE \"\"\"{{ if .System }}<|start_header_id|>system<|end_header_id|>",
       "",
@@ -83,9 +79,7 @@
   },
   "Template Phi3": {
     "description": "Specify Phi3 Template",
-    "prefix": [
-      "template phi3"
-    ],
+    "prefix": ["template phi3"],
     "body": [
       "TEMPLATE \"\"\"{{ if .System }}<|system|>",
       "{{ .System }}<|end|>",
@@ -101,12 +95,25 @@
       "PARAMETER stop \"<|end|>\"",
       "PARAMETER stop \"<|endoftext|>\""
     ]
-  }
+  },
+  "Template Gemma": {
+    "description": "Specify Gemma Template",
+    "prefix": ["template gemma"],
+    "body": [
+      "<start_of_turn>user",
+      "{{ if .System }}{{ .System }} {{ end }}{{ .Prompt }}<end_of_turn>",
+      "<start_of_turn>model",
+      "{{ .Response }}<end_of_turn>",
+      "",
+      "PARAMETER stop \"<start_of_turn>\"",
+      "PARAMETER stop \"<end_of_turn>\"",
+      "PARAMETER penalize_newline \"false\"",
+      "PARAMETER repeat_penalty \"1\""
+    ]
+  },
   "Template Gemma2": {
     "description": "Specify Gemma2 Template",
-    "prefix": [
-      "template gemma2"
-    ],
+    "prefix": ["template gemma2"],
     "body": [
       "<start_of_turn>user",
       "{{ if .System }}{{ .System }} {{ end }}{{ .Prompt }}<end_of_turn>",
