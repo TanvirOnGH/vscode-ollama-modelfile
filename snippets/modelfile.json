@@ -181,5 +181,15 @@
       "PARAMETER stop \"[INST]\"",
       "PARAMETER stop \"[/INST]\""
     ]
+  },
+  "Template Mistral 0.2": {
+    "description": "Specify Mistral 0.2 Template",
+    "prefix": ["template mistral-0.2"],
+    "body": [
+      "[INST] {{ .System }} {{ .Prompt }} [/INST]",
+      "",
+      "PARAMETER stop \"[INST]\"",
+      "PARAMETER stop \"[/INST]\""
+    ]
   }
 }
