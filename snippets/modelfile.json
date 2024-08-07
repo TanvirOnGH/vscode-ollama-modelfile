@@ -102,4 +102,19 @@
       "PARAMETER stop \"<|endoftext|>\""
     ]
   }
+  "Template Gemma2": {
+    "description": "Specify Gemma2 Template",
+    "prefix": [
+      "template gemma2"
+    ],
+    "body": [
+      "<start_of_turn>user",
+      "{{ if .System }}{{ .System }} {{ end }}{{ .Prompt }}<end_of_turn>",
+      "<start_of_turn>model",
+      "{{ .Response }}<end_of_turn>",
+      "",
+      "PARAMETER stop \"<start_of_turn>\"",
+      "PARAMETER stop \"<end_of_turn>\""
+    ]
+  }
 }
