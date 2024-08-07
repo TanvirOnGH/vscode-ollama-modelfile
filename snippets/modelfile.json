@@ -249,5 +249,15 @@
       "PARAMETER stop \"[INST]\"",
       "PARAMETER stop \"[/INST]\""
     ]
+  },
+  "Template Command-R": {
+    "description": "Specify Command-R Template",
+    "prefix": ["template command-r"],
+    "body": [
+      "{{ if .System }}<|START_OF_TURN_TOKEN|><|SYSTEM_TOKEN|>{{ .System }}<|END_OF_TURN_TOKEN|>{{ end }}{{ if .Prompt }}<|START_OF_TURN_TOKEN|><|USER_TOKEN|>{{ .Prompt }}<|END_OF_TURN_TOKEN|}}{{ end }}<|START_OF_TURN_TOKEN|><|CHATBOT_TOKEN|>{{ .Response }}<|END_OF_TURN_TOKEN|>",
+      "",
+      "PARAMETER stop \"<|START_OF_TURN_TOKEN|>\"",
+      "PARAMETER stop \"<|END_OF_TURN_TOKEN|>\""
+    ]
   }
 }
