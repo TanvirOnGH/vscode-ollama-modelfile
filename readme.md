@@ -2,6 +2,8 @@
 
 Experimental syntax highlighting VSCode extension for [Ollama](https://github.com/ollama/ollama) [Modelfile](https://github.com/ollama/ollama/blob/main/docs/modelfile.md).
 
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/TanvirOnGH/vscode-ollama-modelfile)
+
 > [!NOTE]  
 > Ollama's Modelfile syntax is in development.
 >

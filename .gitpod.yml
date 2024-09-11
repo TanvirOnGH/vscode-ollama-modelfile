@@ -1,0 +1,30 @@
+image: gitpod/workspace-full:latest
+
+tasks:
+  - name: Install vsce
+    command: npm install -g @vscode/vsce
+
+vscode:
+  extensions:
+    - https://github.com/TanvirOnGH/vscode-ollama-modelfile/releases/download/1.5.0/ollama-modelfile-1.5.0.vsix
+    - rintoj.json-organizer
+    - castrogusttavo.min-theme
+    - castrogusttavo.symbols
+    - antfu.icons-carbon
+    - gruntfuggly.todo-tree
+    - mhutchie.git-graph
+    - donjayamanne.githistory
+    - timonwong.shellcheck
+    - foxundermoon.shell-format
+    - tyriar.sort-lines
+    - yzhang.markdown-all-in-one
+    - davidanson.vscode-markdownlint
+    - naumovs.color-highlight
+    - oderwat.indent-rainbow
+    - tamasfe.even-better-toml
+    - idleberg.icon-fonts
+    - anseki.vscode-color
+    - aaron-bond.better-comments
+    - ibm.output-colorizer
+    - chouzz.vscode-better-align
+    - esbenp.prettier-vscode
